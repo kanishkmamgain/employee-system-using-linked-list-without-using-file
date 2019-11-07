@@ -212,23 +212,10 @@ void search(struct employee *p)
                 printf("Record Found!!\n\n");
                 printf("\nEmployee id\t\tName\t\tFather name\t\tDesignation\t\tYear\t\tAddress\n");
                 printf("%10s	%12s	%12s	%20s    %20d  %20d,%s\n\n\n",p->empid,p->name,p->father,p->designation,p->year,p->add.pin,p->add.city);
-                return;
             }
             p=p->next;
         }
+	return;
     }
-	/*printf("\n Enter the employee id to be searched :");
-	scanf("%s",&id);
-	while(p)
-    {
-		if(strcmp(id,p->empid)==0)
-		{
-			printf("Record Found!!\n\n");
-			printf("\nEmployee id\t\tName\t\tFather name\t\tDesignation\t\tYear\t\tAddress\n");
-			printf("%10s	%12s	%12s	%20s    %20d  %20d,%s\n",p->empid,p->name,p->father,p->designation,p->year,p->add.pin,p->add.city);
-			return;
-		}
-		p=p->next;
-	}*/
 	printf("No record found!!\n\n");
 }
